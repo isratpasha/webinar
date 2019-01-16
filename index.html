@@ -64,17 +64,6 @@
   		</div>
   	</form>	
 
-  	<script type="text/javascript">
-		function onSignIn(googleUser) {
-  			var profile = googleUser.getBasicProfile();
-  			console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  			console.log('Name: ' + profile.getName());
-  			console.log('Image URL: ' + profile.getImageUrl());
-  			console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-  			window.location.href="https://isratpasha.github.io/webinar/webinar.html"
-			}
-	</script>
-
   <!--<div class="form-label-group">
     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
     <label for="inputEmail">Email address</label>
@@ -91,6 +80,18 @@
     </label>
   </div>
   <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>-->
+  
+    <script type="text/javascript">
+		function onSignIn(googleUser) {
+  			var profile = googleUser.getBasicProfile();
+  			console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  			console.log('Name: ' + profile.getName());
+  			console.log('Image URL: ' + profile.getImageUrl());
+  			console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  			window.location.href="https://isratpasha.github.io/webinar/webinar.html"
+			}
+	</script>
+
 
 	<!-- jQuery library -->
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
