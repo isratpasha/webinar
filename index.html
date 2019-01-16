@@ -14,9 +14,6 @@
     <link href="floating-labels.css" rel="stylesheet">
     
 	<title>Kaplan - Login</title>
-
-	<!-- Google Platform Library -->
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-site" class="bg">
@@ -49,34 +46,35 @@
     		<p>This is a test gallery site for KTP internal usage.<br>Please use your GHCO login.</p>
   		</div>
 
-  		<div class="g-signin2" data-onsuccess="onSignIn" src="images/signin-assets/google_signin_buttons/web/2x/btn_google_signin_light_normal_web@2x.png">
-  		</div>
+  		<!--<div class="g-signin2" data-onsuccess="onSignIn" src="images/signin-assets/google_signin_buttons/web/2x/btn_google_signin_light_normal_web@2x.png">
+  		</div>-->
+
+  		<div id="my-signin2"></div>
 
     	<p class="mt-5 mb-3 text-muted text-center">&copy; 2018-2019</p>
-
-
   	</form>
 
+  	  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
 
-
-  <!--<div class="form-label-group">
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputEmail">Email address</label>
-  </div>
-
-  <div class="form-label-group">
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <label for="inputPassword">Password</label>
-  </div>
-
-  <div class="checkbox mb-3">
-    <label>
-      <input type="checkbox" value="remember-me"> Remember me
-    </label>
-  </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>-->
-
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
 		function onSignIn(googleUser) {
   			var profile = googleUser.getBasicProfile();
   			console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
@@ -85,9 +83,11 @@
   			console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
   			window.location.href="https://isratpasha.github.io/webinar/webinar.html"
 			}
-	</script>
+	</script>-->
 
 
+	<!-- Google Platform Library -->
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<!-- jQuery library -->
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Popper JS -->
