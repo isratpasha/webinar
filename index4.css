@@ -26,6 +26,7 @@
 
 .jumbotron .container {
   max-width: 40rem;
+  align-content: center;
 }
 
 .card-img-top {
