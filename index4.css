@@ -8,6 +8,7 @@
   margin-bottom: 0;
   background-color: #4B0082;
 }
+
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);
