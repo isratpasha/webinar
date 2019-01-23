@@ -1,0 +1,24 @@
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.navbar-brand img {
+  max-width: 20%;
+}
+
+h4.small {
+  font-variant: small-caps;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
