@@ -1,5 +1,5 @@
 .jumbotron .container {
-  max-width: 40rem;
+  max-width: 10rem;
 }
 
 .navbar-brand img {
@@ -13,8 +13,11 @@ h4.small {
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
