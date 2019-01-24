@@ -2,6 +2,26 @@
   --jumbotron-padding-y: 3rem;
 }
 
+.version {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index:-;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+span:hover {
+  background-color: pink;
+}
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
