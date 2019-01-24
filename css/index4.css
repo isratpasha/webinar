@@ -46,6 +46,7 @@ span:hover {
 
 .jumbotron .container {
   max-width: 40rem;
+  margin:auto;
 }
 
 .card-img-top {
