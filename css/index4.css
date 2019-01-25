@@ -48,7 +48,7 @@ span:hover {
   max-width: 40rem;
 }
 
-.g-signin2 {
+div.g-signin2 {
   display: block;
   margin: auto;
 }
