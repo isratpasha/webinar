@@ -1,24 +1,23 @@
 html {
   position: relative;
   min-height: 100%;
-  background-color: #282828;
+  background-color: #202020;
 }
 
 body > .container-fluid {
 	margin-top: 20px;
 	margin-bottom: auto;
-	background-color: #282828;
+	background-color: #202020;
 }
 
 .open-text {
   position: absolute;	
   width: 20px;		
   bottom: 25px;
-  left: 30px;
+  left: 25px;
   opacity: 0.3;
   z-index: 1;
   color: white;
-  background-color: #4B0082;
 }
 
 div.open-text:hover {
