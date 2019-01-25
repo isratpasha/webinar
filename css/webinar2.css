@@ -1,19 +1,19 @@
 html {
   position: relative;
   min-height: 100%;
-  background-color: black;
+  background-color: #282828;
 }
 
 body > .container-fluid {
 	margin-top: 20px;
 	margin-bottom: auto;
-	background-color: black;
+	background-color: #282828;
 }
 
 .open-text {
   position: absolute;	
   width: 20px;		
-  top: 25px;
+  bottom: 25px;
   left: 30px;
   opacity: 0.3;
   z-index: 1;
@@ -53,7 +53,7 @@ div.open-text:hover {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
