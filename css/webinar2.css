@@ -1,11 +1,13 @@
 html {
   position: relative;
   min-height: 100%;
+  background-color: black;
 }
 
 body > .container-fluid {
 	margin-top: 20px;
 	margin-bottom: auto;
+	background-color: black;
 }
 
 .open-text {
