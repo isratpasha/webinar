@@ -4,15 +4,18 @@ html {
 }
 
 body > .container-fluid {
-  margin: auto;
+	margin-top: 20px;
+	margin-bottom: auto;
 }
 
 .open-text {
+  position: absolute;	
   width: 20px;		
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 15px;
+  top: 25px;
+  left: 30px;
   opacity: 0.3;
+  z-index: 2;
+  color: white;
 }
 
 div.open-text:hover {
