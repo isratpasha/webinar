@@ -48,9 +48,9 @@ span:hover {
   max-width: 40rem;
 }
 
-div.g-signin2 {
-  margin-left: auto;
-  margin-right: auto;
+.g-signin2 {
+  display: inline-block;
+  text-align: center;
 }
 
 .card-img-top {
