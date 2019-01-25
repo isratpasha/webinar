@@ -14,6 +14,8 @@
     <!-- Custom styles for this template -->
     <link href="css/webinar.css" rel="stylesheet">
     <!-- Google Platform Library -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
   </head>
 
   <body>
@@ -80,14 +82,16 @@
     </footer>
 
 
-<script>
-  function signOut() {
+<script type="text/javascript">
+  function signOut(googleUser) {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
       console.log('User signed out.');
+      window.location.href="https://isratpasha.github.io/webinar/index.html"
     });
   }
 </script>
+
 	<!-- jQuery library -->
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
