@@ -16,6 +16,7 @@ body > .container-fluid {
   opacity: 0.3;
   z-index: 1;
   color: white;
+  background-color: #4B0082;
 }
 
 div.open-text:hover {
