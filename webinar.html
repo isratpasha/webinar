@@ -28,12 +28,12 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link">Hello, User <span class="sr-only">(current)</span></a>
+              <a class="nav-link">Welcome <span class="sr-only">(current)</span></a>
             </li>
           </ul>
 
           <div class="form-inline mt-2 mt-md-0">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log Out</button>
+            <a href="#" onclick="signOut();"><button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log Out</button><a>
           </div>
         </div>
       </nav>
@@ -78,6 +78,15 @@
       </div>
     </footer>
 
+
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
 	<!-- jQuery library -->
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
