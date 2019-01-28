@@ -21,6 +21,14 @@ body > .container-fluid {
   margin: auto;
 }
 
+.open-poll {
+  cursor: pointer;
+}
+
+.panel-group {
+  margin: auto;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
