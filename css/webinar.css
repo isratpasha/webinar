@@ -16,13 +16,13 @@ html {
 }
 
 body > .container-fluid {
-  padding-top: 60px;
+  padding-top: 65px;
   padding-bottom: 60px;
 }
 
 .open-poll {
   cursor: pointer;
-  background-color: #cccccc;
+  background-color: #dddddd;
   opacity: 0.5;
   transition: 0.3s;
   display: block;
@@ -38,7 +38,7 @@ body > .container-fluid {
 }
 
 .open-poll:hover {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .footer {
@@ -53,4 +53,8 @@ body > .container-fluid {
 .footer > .container {
   padding-right: 15px;
   padding-left: 10px;
+}
+
+.footer span {
+  text-align: center;
 }
