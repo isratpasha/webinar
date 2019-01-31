@@ -24,7 +24,7 @@ body > .container-fluid {
   cursor: pointer;
   background-color: #dddddd;
   opacity: 0.5;
-  transition: 0.3s;
+  transition: max-height 0.3s ease-out;
   display: block;
   margin-right: auto;
   margin-left: auto;
