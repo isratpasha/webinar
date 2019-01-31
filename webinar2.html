@@ -50,39 +50,76 @@
   			</div>
   		</div>
 
-              <!--<div class="row" style="margin-top: 10px;">
-        <iframe style="width:100%; min-height:500px;" frameborder="0" scrolling="no" src="https://app.meet.ps/attendee/ktpstream#polls"></iframe>
-      </div>-->
-
   	</div>
 
-  	  	<div class="col-md-3" style="position: relative;"> 
-  			<iframe style="width:100%; min-height:100%;" frameborder="0" scrolling="no" allowtransparency="true" src="https://rb1.chatroll.com/embed/chat/que?id=TTKU1CWCUcJ&platform=html"></iframe>
+  	  	<div class="col-md-3" style="position: relative;">
+
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Chat')">Chat</button>
+            <button class="tablinks" onclick="openTab(event, 'Poll')">Poll</button>
+        </div>
+
+
+  			<div id="Chat" class="tabcontent">
+          <iframe style="width:100%; min-height:100%;" frameborder="0" scrolling="no" allowtransparency="true" src="https://rb1.chatroll.com/embed/chat/que?id=TTKU1CWCUcJ&platform=html"></iframe>
+        </div>
+
+
+        <div id="Poll" class="tabcontent">
+          <iframe style="width:100%; min-height:500px;" frameborder="0" scrolling="no" src="https://app.meet.ps/attendee/ktpstream#polls"></iframe>
+        </div>
+
   		</div>
 
   	</div>
 
     </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+    <script>
+      function openTab(evt, Chat) {
+        var i, tabcontent, tablinks;
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+        tabcontent=document.getElementByClassName('tabcontent');
+        for (i=0; i<tabcontent.length; i++) {
+          tabcontent[i].style.display="none";
+        }
 
-<script type="text/javascript">
-  function signOut(googleUser) {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-      window.location.href="https://isratpasha.github.io/webinar/index.html"
-    });
-  }
-</script>
+        tablinks=document.getElementByClassName("tablinks");
+        for (i=0; i<tablinks.length; i++) {
+          tablinks[i].className=tablinks[i].className.replace("active", "");
+        }
+
+        document.getElementById(Chat).style.display="block";
+        evt.currentTarget.className+-"active";
+      }
+
+      function openTab(evt, Poll) {
+        var i, tabcontent, tablinks;
+
+        tabcontent=document.getElementByClassName('tabcontent');
+        for (i=0; i<tabcontent.length; i++) {
+          tabcontent[i].style.display="none";
+        }
+
+        tablinks=document.getElementByClassName("tablinks");
+        for (i=0; i<tablinks.length; i++) {
+          tablinks[i].className=tablinks[i].className.replace("active", "");
+        }
+
+        document.getElementById(Poll).style.display="block";
+        evt.currentTarget.className+-"active";
+      }
+    </script>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 
 	<!-- jQuery library -->
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
