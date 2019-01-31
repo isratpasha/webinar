@@ -1,13 +1,13 @@
 html {
   position: relative;
   min-height: 100%;
-  background-color: #202020;
+  background-color: #F6F6F6;
 }
 
 body > .container-fluid {
 	margin-top: 20px;
 	margin-bottom: auto;
-	background-color: #202020;
+	background-color: #F6F6F6;
 }
 
 .open-text {
