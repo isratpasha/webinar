@@ -55,13 +55,13 @@
   	  	<div class="col-md-3" style="position: relative;">
 
           <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Chat')">Chat</button>
+            <button class="tablinks" onclick="openTab(event, 'Chat')" id="defaultOpen">Chat</button>
             <button class="tablinks" onclick="openTab(event, 'Poll')">Poll</button>
         </div>
 
 
   			<div id="Chat" class="tabcontent">
-          <iframe style="width:100%; min-height:100%;" frameborder="0" scrolling="no" allowtransparency="true" src="https://rb1.chatroll.com/embed/chat/que?id=TTKU1CWCUcJ&platform=html"></iframe>
+          <iframe style="width:100%; min-height:500px;" frameborder="0" scrolling="no" allowtransparency="true" src="https://rb1.chatroll.com/embed/chat/que?id=TTKU1CWCUcJ&platform=html"></iframe>
         </div>
 
 
@@ -92,6 +92,8 @@
         document.getElementById(tabName).style.display="block";
         evt.currentTarget.className +- " active";
       }
+
+      document.getElementById("defaultOpen").click();
     </script>
 
   <script>
