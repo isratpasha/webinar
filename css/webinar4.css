@@ -2,6 +2,10 @@ html {
   position: relative;
 }
 
+body {
+  background-color: #1e1e1e;
+}
+
 .navbar {
   background-color: #42135b;
 }
