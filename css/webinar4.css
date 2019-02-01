@@ -21,9 +21,10 @@ body > .container-fluid {
 
 .open-poll {
   cursor: pointer;
-  background-color: #dddddd;
+  background-color: #42135b;
   opacity: 0.5;
   transition: max-height 0.3s ease-out;
+  display: block;
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
