@@ -3,8 +3,20 @@ html {
   min-height: 100%;
 }
 
-body > .container-fluid {
+.navbar {
+  background-color: #42135b;
+}
 
+.navbar img {
+  margin-right: 30px;
+}
+
+.navitem {
+  margin-top: 10px;
+}
+
+body > .container-fluid {
+  padding-bottom: 60px;
 }
 
 .open-poll {
@@ -28,3 +40,20 @@ body > .container-fluid {
   opacity: 0.9;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px; 
+  background-color: #e0e0e0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+.footer span {
+  text-align: center;
+}
