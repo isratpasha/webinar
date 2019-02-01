@@ -5,14 +5,14 @@ html {
 }
 
 body > .container-fluid {
-	margin-top: 20px;
-	margin-bottom: auto;
-	background-color: #303030;
+  margin-top: 20px;
+  margin-bottom: auto;
+  background-color: #303030;
 }
 
 .open-text {
-  position: absolute;	
-  width: 20px;		
+  position: absolute; 
+  width: 20px;    
   bottom: 25px;
   left: 25px;
   opacity: 0.3;
