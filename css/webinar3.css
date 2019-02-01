@@ -1,6 +1,5 @@
 html {
   position: relative;
-  min-height: 100%;
 }
 
 .navbar {
@@ -16,6 +15,7 @@ html {
 }
 
 body > .container-fluid {
+  padding-top: 60px;		
   padding-bottom: 60px;
 }
 
