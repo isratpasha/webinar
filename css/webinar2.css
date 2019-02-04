@@ -10,6 +10,26 @@ body > .container-fluid {
   background-color: #303030;
 }
 
+.version {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  z-index:3;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+span.dot:hover {
+  background-color: pink;
+}
+
 .open-text {
   position: absolute; 
   width: 20px;    

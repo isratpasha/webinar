@@ -19,6 +19,26 @@ body > .container-fluid {
   padding-bottom: 60px;
 }
 
+.version {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index:3;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+span.dot:hover {
+  background-color: pink;
+}
+
 .open-poll {
   cursor: pointer;
   background-color: #dddddd;
