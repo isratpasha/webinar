@@ -1,20 +1,45 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113582331-16"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-113582331-16', {
+    'custom_map': {'dimension1': 'UID'}
+  });
+</script>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
   <meta name="google-signin-client_id" content="724544672349-q0mtlh3csacfq4hvskujp21tb3nt067r.apps.googleusercontent.com">
 
-    <title>Kaplan - Webinar</title>
-
-    <!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <!-- Custom styles for this template -->
     <link href="css/webinar4.css" rel="stylesheet">
     <!-- Google Platform Library -->
   <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+	<title>Kaplan - Webinar</title>
+
+        <script type="text/javascript">
+            var _paq = _paq || [];
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u="//analytix.liveonlinetechnology.com/";
+                _paq.push(['setTrackerUrl', u+'piwik.php']);
+                _paq.push(['setSiteId', '14']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
 
   </head>
 
@@ -22,50 +47,51 @@
 
       <div class="open-poll" onclick="openNav()">
         <span class="text-white" alt="Click for Poll">&#9745; poll</span>
-      </div>
+      </div><!--poll-->
 
     <div class="container-fluid">
 
     <div class="row no-gutters">
 
-        <div class="col-md-9">
+    	<div class="col-md-9">
 
-        <div style="position: relative; display: block; max-width: 100%;">
-            <div style="padding-top: 56.25%;">
-                <video data-video-id="5986932861001" 
-                    data-account="5463980167001" 
-                    data-player="8g266rA9w" 
-                    data-embed="default" 
-                    data-application-id 
-                    class="video-js" 
-                    controls 
-                    style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></video>
-                <script src="//players.brightcove.net/5463980167001/8g266rA9w_default/index.min.js"></script>
-            </div>
-        </div>
+		<div style="position: relative; display: block; max-width: 100%;">
+			<div style="padding-top: 56.25%;">
+				<video data-video-id="5986932861001" 
+					data-account="5463980167001" 
+					data-player="8g266rA9w" 
+					data-embed="default" 
+					data-application-id 
+					class="video-js" 
+					controls 
+					style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></video>
+  				<script src="//players.brightcove.net/5463980167001/8g266rA9w_default/index.min.js"></script>
+  			</div>
+  		</div><!--video-->
 
-    </div>
+  	</div><!--column with video-->
 
-      <div class="col-md-3" style="position: relative;"> 
-            <iframe style="border: 3px solid #42135b;" width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" src="https://rb1.chatroll.com/embed/chat/que?id=TTKU1CWCUcJ&platform=html"></iframe>
-        </div>
+  	  <div class="col-md-3" style="position: relative;"> 
+  			<iframe style="border: 3px solid #42135b;" width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" src="https://rb1.chatroll.com/embed/chat/que?id=TTKU1CWCUcJ&platform=html"></iframe>
+  		</div><!--column with chat-->
 
-    </div>
+  	</div><!--row-->
 
-    </div>
+    </div><!--container fluid-->
 
-      <div>
+  <!--Nav buttons for different page design-->
+  <!--<div>
     <a href="webinar.html"><span class="dot"></span></a>
     <a href="webinar2.html"><span class="dot"></span></a>
     <a href="webinar3.html"><span class="dot"></span></a>
     <a href="webinar4.html"><span class="dot" style="background-color: purple;"></span></a>
-  </div>
+  </div>-->
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <iframe width="100%" height="100%" frameborder="0" scrolling="no" src="https://app.meet.ps/attendee/ktpstream#polls"></iframe>
 
-    </div>
+    </div><!--pullout poll-->
 
 <script>
 function openNav() {
@@ -78,16 +104,23 @@ function closeNav() {
 </script>
 
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- jQuery library -->
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    
-    <script src="js/vendor/holder.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	
+  <!-- <script src="js/app3.js"></script> -->
+        <script>
+            setInterval(function(){
+                $.ajax('/ping');
+            }, 60000);
+        </script>
+
+  <script src="js/vendor/holder.min.js"></script>
 
   </body>
   </html>
