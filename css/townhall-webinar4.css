@@ -43,6 +43,10 @@ span.dot:hover {
   background-color: pink;
 }
 
+.header--login{
+  float:left;
+}
+
 .open-poll {
   cursor: pointer;
   background-color: #813BA6;
