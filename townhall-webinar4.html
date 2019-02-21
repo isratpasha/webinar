@@ -44,37 +44,27 @@
   </head>
 
   <body>
+      <header class="main-nav">
 
-      <div class="open-poll" onclick="openNav()">
-        <span class="text-white" alt="Click for Poll">&#9745; poll</span>
-      </div><!--poll-->
+            <div class="row container-fluid nopad text-white">
 
-      <header>
-            <div class="container-fluid nopad text-white">
+                <div class="open-poll" onclick="openNav()">
+                      <span class="text-white" alt="Click for Poll">&#9745; poll</span>
+                </div><!--poll-->
 
-                <div class="header--container">
-
-                    <div class="col-md-3 header--logo">
-                            <img src="/img/KTP_sta_White_horizontal.png" alt="Kaplan Test Prep" class="logo">
+                <div class="row header--container">
+                    <div class="header--logo">
+                            <img src="images/kaplan-logo-white.png" alt="Kaplan Test Prep" class="logo" width="100">&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
 
-                  <div class="col-md-9">
                     <div class="header--title">
                         <span>Hello {{$givenName}}!</span>
                         <img src="{{$picture}}">
                         @if (Auth::user()->user_type == 'ADMIN')
                         &nbsp;&nbsp;<a href="/dashboard"><span>Dashboard</span></a>
-                        @endif
+                        @endif 
+                        &nbsp;&nbsp;<a class="header--login" href="logout" class="login">Log Out</a>
                     </div>
-
-                    <div class="header--login">
-                        <a href="logout" class="login">Log Out</a>
-                        <!--
-                            Hi {{$givenName}} {{$familyName}}! ({{$email}})
-                            <img style="width: 48px;" src="{{$picture}}">
-                        -->
-                    </div>
-                  </div>
 
                 </div><!--header container-->
             </div><!--container fluid-->
