@@ -52,19 +52,15 @@
                       <span class="text-white" alt="Click for Poll">&#9745; poll</span>
                 </div><!--poll-->
 
-                <div class="row header--container">
-                    <div class="header--logo">
-                            <img src="images/kaplan-logo-white.png" alt="Kaplan Test Prep" class="logo" width="100">&nbsp;&nbsp;&nbsp;&nbsp;
-                    </div>
+                <div class="header--container">
+                        <img src="images/kaplan-logo-white.png" alt="Kaplan Test Prep" class="logo" width="100" height="100%">&nbsp;&nbsp;&nbsp;&nbsp;
 
-                    <div class="header--title">
-                        <span>Hello {{$givenName}}!</span>
+                        <span class="header--title">Hello {{$givenName}}!</span>
                         <img src="{{$picture}}">
                         @if (Auth::user()->user_type == 'ADMIN')
                         &nbsp;&nbsp;<a href="/dashboard"><span>Dashboard</span></a>
                         @endif 
                         &nbsp;&nbsp;<a class="header--login" href="logout" class="login">Log Out</a>
-                    </div>
 
                 </div><!--header container-->
             </div><!--container fluid-->
