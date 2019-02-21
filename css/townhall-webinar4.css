@@ -21,6 +21,7 @@ body {
 body > .container-fluid {
   padding-top: 30px;		
   padding-bottom: 60px;
+  font-family: "Helvetica", Arial, sans-serif;
 }
 
 .version {
