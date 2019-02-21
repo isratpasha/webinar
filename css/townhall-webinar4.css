@@ -1,0 +1,120 @@
+html {
+  position: relative;
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+.navbar {
+  background-color: #42135b;
+}
+
+.navbar img {
+  margin-right: 30px;
+}
+
+.navitem {
+  margin-top: 10px;
+}
+
+body > .container-fluid {
+  padding-top: 30px;		
+  padding-bottom: 60px;
+}
+
+.version {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  z-index:3;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+span.dot:hover {
+  background-color: pink;
+}
+
+.open-poll {
+  cursor: pointer;
+  background-color: #813BA6;
+  opacity: 0.5;
+  transition: max-height 0.3s ease-out;
+  display: block;
+  width: 10%;
+  margin-left: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+}
+
+.open-poll:hover {
+  opacity: 0.9;
+}
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 2; 
+  top: 0; 
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px; 
+  background-color: #e0e0e0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+.footer span {
+  text-align: center;
+}
