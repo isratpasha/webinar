@@ -58,9 +58,9 @@
                         <span class="header--title">Hello {{$givenName}}!</span>
                         <img src="{{$picture}}">
                         @if (Auth::user()->user_type == 'ADMIN')
-                        &nbsp;&nbsp;<a href="/dashboard" class="dashboard">Dashboard</a>
+                        &nbsp;&nbsp;<a href="/dashboard" class="dashboard text-light">Dashboard</a>
                         @endif 
-                        &nbsp;&nbsp;<a href="logout" class="login">Log Out</a>
+                        &nbsp;&nbsp;<a href="logout" class="login text-light">Log Out</a>
 
                 </div><!--header container-->
             </div><!--container fluid-->
