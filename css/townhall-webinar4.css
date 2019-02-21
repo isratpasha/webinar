@@ -104,11 +104,12 @@ span.dot:hover {
 
 .header--container {
   padding-top: 15px;
+  margin-left: auto;
   justify-content: center;
 }
 
 .header--container .logo {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .footer {
