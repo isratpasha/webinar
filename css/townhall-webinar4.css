@@ -111,6 +111,10 @@ span.dot:hover {
   opacity: 0.4;
 }
 
+a {
+  text-decoration: none;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
